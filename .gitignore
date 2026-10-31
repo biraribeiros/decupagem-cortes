@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+trabalho/
+entrega/
+evals/results/

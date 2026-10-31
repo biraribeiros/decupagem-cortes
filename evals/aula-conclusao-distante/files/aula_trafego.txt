@@ -1,0 +1,16 @@
+[00:00] Bom dia pessoal, vamos começar a aula de hoje sobre métricas de anúncio.
+[00:06] A primeira coisa que eu quero falar é sobre o clique.
+[00:10] Muita gente acha que o anúncio bom é o que tem mais clique.
+[00:15] E aí comemora quando o custo por clique cai pra vinte centavos.
+[00:21] Só que clique não paga boleto.
+[00:25] Ah, antes que eu esqueça, a lista de presença tá no grupo, assinem por favor.
+[00:31] E a gente vai ter intervalo às dez horas.
+[00:36] Voltando. O que importa é quanto custou cada cliente que comprou.
+[00:42] Eu tive um cliente, uma loja de móveis, que tinha clique barato e não vendia nada.
+[00:49] Quando a gente olhou o funil, o problema era que o anúncio atraía curioso, não comprador.
+[00:57] A gente trocou o público, o clique ficou mais caro, e as vendas dobraram.
+[01:05] Então a métrica que manda é o custo por venda, não o custo por clique.
+[01:11] Alguma dúvida até aqui?
+[01:14] Beleza, agora vamos falar do CPM.
+[01:19] O CPM é o custo por mil impressões.
+[01:24] Ele sobe muito em novembro por causa da Black Friday.

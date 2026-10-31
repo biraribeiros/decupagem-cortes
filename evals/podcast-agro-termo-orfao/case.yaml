@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: podcast-agro-termo-orfao
+expected_outcome: |
+  Decupagem com cortes completos, minutagem tirada da transcrição, arquivos de edição (CSV/EDL/SRT)
+  e tratamento do termo "Raízes", que só é explicado no início do episódio.
+context:
+  scaffold_script: place-files.sh
