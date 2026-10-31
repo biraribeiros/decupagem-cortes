@@ -104,11 +104,17 @@ def palavras_de_json(dados):
         fal = s.get("speaker")
         ws = s.get("words") or []
         if ws:
+            ult = float(s.get("start", 0))
             for w in ws:
                 txt = (w.get("word") or w.get("text") or "").strip()
                 if txt:
-                    pal.append({"w": txt, "s": round(float(w["start"]), 3), "e": round(float(w["end"]), 3),
-                                "f": fal, "real": True})
+                    # WhisperX deixa números e siglas sem tempo: herda o fim da palavra anterior
+                    tem = w.get("start") is not None and w.get("end") is not None
+                    ini = float(w["start"]) if tem else ult
+                    fim = float(w["end"]) if tem else ini
+                    pal.append({"w": txt, "s": round(ini, 3), "e": round(fim, 3), "f": fal or w.get("speaker"),
+                                "real": tem})
+                    ult = fim
         else:
             cues.append((float(s["start"]), float(s["end"]), fal, limpa(s.get("text", ""))))
     if cues:
