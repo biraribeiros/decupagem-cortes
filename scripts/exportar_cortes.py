@@ -86,7 +86,7 @@ def main():
         if not partes:
             erros.append(f"{cid}: nenhum trecho válido"); continue
 
-        fora_ordem = any(partes[k]["i0"] <= partes[k - 1]["i0"] for k in range(1, len(partes)))
+        fora_ordem = any(partes[k]["ini"] < partes[k - 1]["ini"] for k in range(1, len(partes)))
         if fora_ordem and not c.get("nao_linear"):
             erros.append(f"{cid}: trechos fora da ordem do vídeo sem 'nao_linear: true'")
         for k in range(1, len(partes)):
